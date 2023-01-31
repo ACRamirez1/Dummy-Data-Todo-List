@@ -5,27 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dummy Todo List</title>
-
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
-    <button onclick="fetchTodos()">Fetch Todos</button>
-    <button onclick="logTodos()">Log Todos</button>
-    <button onclick="populateTodos()">Populate Todos</button>
+    <!-- Removed button since I'm fetching for all the other button functions -->
+    <!-- <button onclick="fetchTodos()">Fetch Todos</button>
+    <button onclick="logTodos()">Log Todos</button> -->
+    <br />
+    <button onclick="populateTodos()">Get All Todos</button>
+    <br /><br />
+    <hr />
+    <!-- <button onclick="clearTodos()">Clear Todos</button> -->
 
-    <!-- <p>
-        <label for="num_input">Enter a number between 1 and 10</label>
-        <input type="number" name="num_input" id="num_input" min="1" max="10"></input>
-        
-    </p> -->
+    <!-- Don't use a form. It expects an action and messes everything up!-->
+    <p>
+      <label for="num-input">Enter a number between 1 and 10</label>
+      <input type="number" name="num-input" id="num-input" min="1" max="10" />
+    </p>
 
-    <!-- <button onClick="getByUser()">Get Todos by User</button> -->
-
+    <button onclick="getByUser()">Get Todos by User</button>
+    <button onclick="getCompletedByUser()">Get Completed Todos by User</button>
+    <button onclick="getIncompleteByUser()">Get Completed Todos by User</button>
     <ol id="todo-list">
       <!-- LIs will go here -->
     </ol>
-    <h3>Another Way</h3>
-    <div id="container"></div>
 
     <script src="./app.js"></script>
   </body>
